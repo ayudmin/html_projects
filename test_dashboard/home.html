@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lnag='en'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/assets/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/bootstrap.min.css">
+        
+        <title>Test Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )" >
+        <nav class="navbar navbar-inverse visible-xs" style="background-color: #4eb72b; border-color:#4eb72b;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle='collapse' data-target='#myNavbar' style="border-color: #4eb72b;">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="color: black;">Eirmon</a>
+                </div>
+                <div class="collapse navbar-collaspe" id="myNavbar">
+                    <ul class="nav navbar-nav" style="font-weight: 900;">
+                        <li class="active">
+                            <a data-toggle='tab' href="#Dash" style="color: white;">Dashboard</a>
+                        </li>
+                        <li>
+                            <a data-toggle='tab' href="#Age" style="color: white;">Profile</a>
+                        </li>
+                        <li>
+                            <a data-toggle='tab' href="#Gender" style="color: white;">Exchange</a>
+                        </li>
+                        <li>
+                            <a data-toggle='tab' href="#Geo" style="color: white;">Back home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid" >
+            <div class="row content">
+                <div class="col-sm-3 sidenav hidden-xs" style="background-color: #aebfa8;">
+                    <h2>Eirmon</h2>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a data-toggle="tab" href="#Dash" style="color:black"><i class="fa fa-home"></i> Dashboard</a></li>
+                        <li><a data-toggle="tab" href="#Age" style="color:black"><i class="fa fa-vcard-o" style="font-size:18px;color:black"></i> Profle</a></li>
+                        <li><a data-toggle="tab" href="#Gender" style="color:black"><i class="fa fa-venus-mars" style="font-size:18px"></i> Exchange</a></li>
+                        <li><a data-toggle="tab" href="#Street" style="color:black"><i class="fa fa-street-view" style="font-size:18px;color:green"></i> Credit</a></li>
+                        <li><a data-toggle="tab" href="#Geo" style="color:black"><i class="fa fa-map-marker" style="font-size:18px;color:orange"></i> Back home</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <br>
+                <div class="col-sm-9 tab-content">  
+                    <div class="well well-sm" style="background-color: #4eb72b">
+                      <marquee><span style="font-size: 18px; padding-right: 5px; color: #5c68ff;">Exchange rate today 1$ <i class="fa fa-exchange" aria-hidden="true"></i> 450SSP (Market rate)</span><span id="clock">&nbsp;</span></marquee>
+                
+                    </div>        
+                  <div id="Dash" class="well tab-pane fade in active" style="font-weight: bold;">
+                    <h4>Dashboard</h4>
+                    <p>Hello User, Welcome back! </p>
+                    <div class="row">
+                        <div class="col-sm-5">
+                          <div class="well">
+                            <h4>Balance (<i class="fa fa-usd"></i>)</h4>
+                            <p>$1200</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="well">
+                            <h4>Points (<i class="fa fa-gift"></i>)</h4>
+                            <p>100+ Million</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                          </div>
+                        </div>
+                        </div>
+
+                        <div>
+                          <p>Amount accumulated so far.</p> 
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="" style="width:100%">
+                              40%
+                            </div>
+                          </div>
+                        </div>
+                        <a href=""><input type="button" value="Earn points" style="color: #15ad0c; margin-bottom: 20px;"></a>
+                        <div class="row">
+                          <div class="col-sm-7">
+                            <div class="well">
+                            
+                              <div id="quoteArea" class="container-fluid">
+                                
+                                <div id="quoteItself" class="row text-center" style="padding-bottom: 5px; font-weight: bold;">
+                                 Exchange Points to Dollars 
+                                 <p style="color: #f39c12;">(Notice: Minimum amount for exchange is 100 points)</p>
+                                </div>
+                                <div id="quoteAuthor" class="row text-center">
+                                  <input type="number" placeholder="Points" class="" style="max-height:10px;font-weight: bold; padding: 19px; background-color: #f5f5f5;border: 1px solid #e3e3e3;border-radius: 4px;box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%); margin-top: 5px;">
+                                  
+                                </div>
+                                <div id="quoteAuthor" class="row text-center">
+                                  <a href="">
+                                    <button style="margin-top: 5px;font-weight: bold;padding: 8px; background-color: #f5f5f5;border: 1px solid #e3e3e3;border-radius: 4px;box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);" type="button" >Exchange</button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>        
+                  <div id="Age" class="well tab-pane fade">
+                    <h4>Age</h4>
+                    <p>Age... In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.' </p>
+                  </div>        
+                  <div id="Gender" class="well tab-pane fade">
+                    <h4>Gender</h4>
+                    <p>Gender... 'How wrong it is for a woman to expect the man to build the world she wants, rather than to create it herself?' - Anais Nin </p>
+                  </div>        
+                  <div id="Geo" class="well tab-pane fade">
+                    <h4>Geo Location</h4>
+                    <p>Location... 'But at my back I always hear Time's winged chariot hurrying near.' -Andrew Marvell </p>
+                  </div>                                                                                                                                                                   
+                  <div id="Street" class="well tab-pane fade">
+                    <h4>Street</h4>
+                    <p>Street... 'Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.' -Albert Einstein </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="well">
+                      
+                        <div id="quoteArea" class="container-fluid">
+                          
+                          <div id="quoteItself" class="row text-center" style="padding-bottom: 5px; font-weight: bold;">
+                           Exchange Points to Dollars 
+                           <p style="color: #f39c12;">(Notice: Minimum amount for exchange is 100 points)</p>
+                          </div>
+                          <div id="quoteAuthor" class="row text-center">
+                            <input type="number" placeholder="Points" class="" style="max-height:10px;font-weight: bold; padding: 19px; background-color: #f5f5f5;border: 1px solid #e3e3e3;border-radius: 4px;box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%); margin-top: 5px;">
+                            
+                          </div>
+                          <div id="quoteAuthor" class="row text-center">
+                            <a href="">
+                              <button style="margin-top: 5px;font-weight: bold;padding: 8px; background-color: #f5f5f5;border: 1px solid #e3e3e3;border-radius: 4px;box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);" type="button" >Submit</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/assets/home.js"></script>
+    </body>
+</html>

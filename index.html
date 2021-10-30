@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&amp;display=swap">
+</head>
+<body>
+    <div id="root">
+        <div class="relative bg-white shadow">
+            <div class="topnav max-w-7x1 mx-auto px-4 sm:px-6">
+                <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    <div class="Ig:w-0 Ig:flex-1">
+                        <div class="flex flex-row items-center">
+                            <a href="#">
+                                <a  class="p1-5 text-3x1 text-gray-500 hoover:text-gray-600 transition duration-300 ease-in-out active" aria-current="page"  href="#">Eirmon</a>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button" id="mobiledropdown" onclick="mobiledropdown()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">Dashboard</a>
+                        <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">Pricing</a>
+                        <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">Pricing</a>
+                        <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">Pricing</a>
+                        <!-- <div  class="relative">
+                            <button type="button" id="dropdown" onclick="learninFunction()" class="group inline-flex  dropbtn items-center space-x-2 text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                                <span>Shops</span>
+                                <svg class="text-gray-700 h-5 w-5 group-hover:text-gray-900 group-focus:text-gray-900 transition ease-in-out duration-150" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd">
+
+                                    </path>
+                                </svg>
+                            </button>
+                            <div  style="transition: transform 200ms ease 0s, opacity 200ms ease 0s; opacity: 1;">
+                                <div id="dropdown-content" class="z-20 absolute -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                    <div class="rounded-lg shadow-lg">
+                                        <div class="rounded-lg shadow-xs overflow-hidden">
+                                            <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                                                <div class="cursor-pointer -m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path>
+                                                    </svg>
+                                                    <div class="space-y-1">
+                                                        <p class="text-base leading-6 font-medium text-gray-900">
+                                                            Basic Django Roadmap
+                                                        </p>
+                                                        <p class="text-sm leading-5 text-gray-500">
+                                                            Elevate your Django skills
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="cursor-pointer -m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
+                                                    </svg>
+                                                    <div class="space-y-1">
+                                                        <p class="text-base leading-6 font-medium text-gray-900">
+                                                            Advanced Django Roadmap
+                                                        </p>
+                                                        <p class="text-sm leading-5 text-gray-500">
+                                                            Become a professional Django developer
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </nav>
+                    <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+                        <ul class="flex flex-">
+                            <li>
+                                <a class="px-4 py-2 text-gray-700 hover:text-gray-900 transition duration-500 ease-in-out hover:rounded hover:bg-gray-200 rounded text-gray-900" href="/login">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 signup">
+                                <a class="text-white px-3 py-2 bg-red-500 hover:bg-red-600 rounded border border-red-600 shadow font-semibold transition duration-500 ease-in-out" href="/signup">
+                                    Join Today
+                                </a>
+                            </li>
+                            <li>
+                                <button type="button" style="float: left;" class="topnavbutton -mr-2 -my-2 md:hidden">
+                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                        <path stroke-lincap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+        
+                                        </path>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+                <div  id="mobiledropdown-content" style="transition: transform 200ms ease 0s, opacity 200ms ease 0s; opacity: 1;">
+                    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50">
+                        <div class="rounded-lg shadow-lg">
+                            <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+                                <div class="pt-5 pb-6 px-5 space-y-6">
+                                    <div class="flex items-center justify-between">
+                                        <a aria-current="page" class="active" href="/">
+                                            <p class="h-8 w-auto" src="/static/media/logo.b070938f.svg" alt="Eirmon">Eirmon</p></a>
+                                            <div class="-mr-2">
+                                                <button type="button" id="mobiledropdown" onclick="mobiledropdown()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <nav class="grid row-gap-8">
+                                                <div class="cursor-pointer -m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path>
+                                                    </svg>
+                                                    <div class="text-base leading-6 font-medium text-gray-900">
+                                                        Basic Django Roadmap
+                                                    </div>
+                                                </div>
+                                                <div class="cursor-pointer -m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
+                                                    </svg>
+                                                    <div class="text-base leading-6 font-medium text-gray-900">
+                                                        Advanced Django Roadmap
+                                                    </div>
+                                                </div>
+                                                <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">
+                                                    Pricing
+                                                </a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="py-6 px-5 space-y-6">
+                                        <div class="space-y-6">
+                                            <span class="w-full flex rounded-md shadow-sm">
+                                                <div class="cursor-pointer w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-600 hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 transition ease-in-out duration-150">
+                                                    Sign up
+                                                </div>
+                                            </span>
+                                            <p class="text-center text-base leading-6 font-medium text-gray-500">
+                                                Have an account? 
+                                                <span class="cursor-pointer text-red-600 hover:text-red-500 transition ease-in-out duration-150">
+                                                    Sign in
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div style="position: fixed; z-index: 9999;">
+    </div>
+    <div class="page">
+        <div>
+            <div>
+                <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                        <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                                <div class="hero-content-line">
+                                    <div class="hero-content-line-inner">
+                                        Become a
+                                    </div>
+                                </div>
+                                <div class="hero-content-line">
+                                    <div class="hero-content-line-inner">
+                                        Professional Shop Owner
+                                    </div>
+                                </div>
+                                <div class="hero-content-line">
+                                    <div class="hero-content-line-inner">
+                                        With Eirmon Shops
+                                    </div>
+                                </div>
+                            </h1>
+                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                                I'ts time to become your own Boss 
+                            </p>
+                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                            Trade and manage your shop's transactions like a pro securely and privately
+                            </p>
+                            <a class="mt-8 text-white bg-red-500 hover:bg-red-600 rounded border border-red-600 shadow font-semibold px-6 py-2 inline-block transition duration-500 ease-in-out cursor-pointer text-xl" href="/pricing">
+                                Start selling now
+                            </a>
+                            <p class="mt-3 text-sm text-gray-500">Join 50+ traders who use Eirmon shops every day</p>
+                        </div>
+                        <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                            <div class="relative mx-auto w-full lg:max-w-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 183" version="1.1" id="svg8">
+                                    <defs id="defs2"></defs>
+                                    <g id="layer1">
+                                        <path id="circle12" d="M 119.94157,33.131754 A 19.456419,19.456419 0 0 1 100.48515,52.588173 19.456419,19.456419 0 0 1 81.028733,33.131754 19.456419,19.456419 0 0 1 100.48515,13.675335 19.456419,19.456419 0 0 1 119.94157,33.131754 Z" style="fill: rgb(160, 97, 106); stroke-width: 0.264583;"></path>
+                                        <path d="m 85.963325,42.859966 c 0,0 3.665696,27.633767 -1.973834,30.735497 -5.63953,3.10172 33.555279,3.38372 33.555279,3.38372 0,0 -8.74129,-23.968046 -4.79362,-31.299462 z" fill="#a0616a" id="path14" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 146.16512,77.118973 -3.25966,14.84312 -6.8924,31.403397 -0.20637,1.71979 -2.37861,19.90989 -1.58221,13.22653 -1.06098,8.8847 c -6.45054,3.31523 -11.12573,5.60388 -11.12573,5.60388 0,0 -0.40216,-2.01613 -1.05039,-4.59581 -4.52702,1.35731 -12.90373,3.60891 -20.002496,4.0587 2.584976,2.88132 3.772956,5.588 2.161646,7.58561 -4.863046,6.02191 -24.939629,-6.59342 -31.96167,-11.29771 a 19.007868,19.007868 0 0 0 -0.185208,3.40254 l -5.373688,-4.13279 0.531813,-9.50912 0.896937,-16.08932 1.127125,-20.17712 a 21.183634,21.183634 0 0 1 -0.891646,-2.65377 c -1.645708,-5.85259 -3.643312,-17.53923 -5.17525,-27.339397 -1.232958,-7.88723 -2.159,-14.55208 -2.354791,-15.97025 -0.02646,-0.18521 -0.03969,-0.28046 -0.03969,-0.28046 l 29.747104,-13.1445 c 2.114021,4.90273 11.985648,6.37646 11.985648,6.37646 8.178266,-0.56356 14.589116,-4.87627 14.589116,-4.87627 z" fill="#d0cde1" id="path16" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 121.91606,167.07202 c 0,0 -1.25942,0.43127 -3.3073,1.04246 -4.52702,1.35731 -12.90373,3.60891 -20.002496,4.0587 -6.11187,0.39159 -11.27654,-0.55033 -12.221103,-4.5376 -0.404812,-1.7145 0.169333,-3.12473 1.420813,-4.2836 3.735916,-3.4634 13.493746,-4.7043 21.232806,-5.13027 2.18546,-0.11907 4.20688,-0.17463 5.88963,-0.1958 2.8575,-0.037 4.73075,0.0212 4.73075,0.0212 l 0.045,0.17463 z" fill="#a0616a" id="path18" style="stroke-width: 0.264583;"></path>
+                                        <path d="M 84.299215,14.727779 80.66134,13.271382 c 0,0 7.606448,-8.3742716 18.189424,-7.6460436 l -2.97653,-3.27692 c 0,0 7.275746,-2.91276102 13.890056,4.73328 3.47702,4.0193466 7.49996,8.7439026 10.00784,14.0660436 h 3.89592 l -1.62601,3.580286 5.69104,3.580289 -5.84129,-0.643094 a 20.006926,20.006926 0 0 1 0.15851,5.938573 7.6836904,7.6836904 0 0 1 -2.81369,5.026523 v 0 c 0,0 -4.51163,-9.338633 -4.51163,-10.795035 v 3.640992 c 0,0 -3.63787,-3.276877 -3.63787,-5.461455 l -1.98428,2.548684 -0.99214,-4.005106 -12.236446,4.005106 1.98428,-3.276865 -7.606454,1.092288 2.976524,-4.005107 c 0,0 -8.598584,4.73328 -8.929371,8.738394 -0.330673,4.005051 -2.847517,7.800097 -2.847517,7.800097 0,0 -6.743237,-18.723081 2.847509,-24.184533 z" fill="#2f2e41" id="path20" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 167.31327,145.35766 c -1.98173,2.14842 -6.8924,5.38427 -12.84552,8.88736 -2.21457,1.30175 -4.572,2.64318 -6.97707,3.97668 -5.73881,3.18294 -11.7475,6.33677 -16.70579,8.88471 -6.45054,3.31523 -11.12573,5.60388 -11.12573,5.60388 0,0 -0.40216,-2.01613 -1.05039,-4.59582 -0.86784,-3.45281 -2.17488,-7.91633 -3.53748,-9.89277 -0.0476,-0.0688 -0.0953,-0.13229 -0.14288,-0.19579 -0.39687,-0.52123 -0.79639,-0.8255 -1.19062,-0.8255 l 19.69029,-12.20523 8.509,-5.27579 -6.1304,-14.6341 -7.68879,-18.35679 4.64079,-14.766397 4.66461,-14.84313 h 8.74183 c 0,0 2.89454,6.31825 6.59606,15.12889 0.55298,1.31763 1.12448,2.69082 1.70657,4.10898 7.6147,18.520817 17.10795,44.383837 12.84552,49.000817 z" fill="#d0cde1" id="path22" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 100.76791,179.75879 c -4.863036,6.02192 -24.939624,-6.59342 -31.961665,-11.29771 -1.529292,-1.02393 -2.439459,-1.67216 -2.439459,-1.67216 l 6.424084,-8.56721 2.034645,-2.71198 c 0,0 1.820334,0.96573 4.511146,2.53735 0.0979,0.0582 0.195792,0.11642 0.296333,0.17463 2.320396,1.3626 5.233459,3.14325 8.17298,5.13027 4.05606,2.74373 8.15711,5.87375 10.80029,8.82121 2.584986,2.8813 3.772966,5.58798 2.161646,7.5856 z" fill="#a0616a" id="path24" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 79.336661,158.04708 a 12.642194,12.642194 0 0 0 -2.143125,0.17463 c -6.082771,1.0451 -7.876646,6.55108 -8.387291,10.23937 a 19.007868,19.007868 0 0 0 -0.185209,3.40254 l -5.373687,-4.13279 -1.957917,-1.50548 c -4.712229,-1.64306 -8.911166,-4.56141 -12.551833,-8.00364 a 63.098481,63.098481 0 0 1 -8.453437,-10.02506 88.410589,88.410589 0 0 1 -6.5405,-11.21834 8.2506819,8.2506819 0 0 1 -0.113771,-6.99823 l 6.654271,-14.82989 9.726083,-21.674667 q 0.10714,-0.77388 0.235466,-1.51342 c 1.928812,-11.05958 7.096125,-15.97024 7.096125,-15.97024 h 3.947583 l 2.640542,15.97024 3.280833,19.841107 -2.299229,7.49829 -5.312834,17.31697 5.077355,5.51391 z" fill="#d0cde1" id="path26" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 83.804511,111.81904 3.374731,3.93721 c 1.253805,-0.23905 2.56313,-0.51998 3.91169,-0.83546 l -0.969285,-3.10175 2.370007,2.76501 c 14.286806,-3.51388 31.995206,-10.34557 31.995206,-10.34557 0,0 -19.11804,1.40181 -33.392603,-1.71678 -6.315802,-1.37983 -12.813963,1.75104 -15.40571,7.67355 -1.506427,3.44239 -1.269842,6.42481 4.072995,6.42481 a 35.288749,35.288749 0 0 0 5.384988,-0.50651 z" fill="#db162f" id="path28" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 160.73838,176.53087 v 1.60602 a 3.5295734,3.5295734 0 0 1 -0.24077,1.28852 3.6215055,3.6215055 0 0 1 -0.25665,0.52917 3.5553332,3.5553332 0 0 1 -3.05594,1.73567 H 39.035339 a 3.555312,3.555312 0 0 1 -3.055938,-1.73567 3.6201588,3.6201588 0 0 1 -0.256645,-0.52917 3.5295734,3.5295734 0 0 1 -0.240771,-1.28852 v -1.60602 a 3.5524043,3.5524043 0 0 1 3.553354,-3.55335 h 6.810375 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148166,-0.14817 h 3.553355 a 0.14792325,0.14792325 0 0 1 0.148166,0.14817 v 0.74877 h 2.219841 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148167,-0.14817 h 3.553354 a 0.14792325,0.14792325 0 0 1 0.148167,0.14817 v 0.74877 h 2.2225 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148166,-0.14817 h 3.553354 a 0.14792325,0.14792325 0 0 1 0.148167,0.14817 v 0.74877 h 2.219854 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148167,-0.14817 h 3.553354 a 0.14792325,0.14792325 0 0 1 0.148167,0.14817 v 0.74877 h 2.219854 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148166,-0.14817 h 3.553355 a 0.14792325,0.14792325 0 0 1 0.148166,0.14817 v 0.74877 h 2.2225 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148167,-0.14817 h 3.553354 a 0.14792325,0.14792325 0 0 1 0.148167,0.14817 v 0.74877 h 2.219854 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.148166,-0.14817 h 27.834162 a 0.14792325,0.14792325 0 0 1 0.14817,0.14817 v 0.74877 h 2.2225 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.14817,-0.14817 h 3.55336 a 0.14963775,0.14963775 0 0 1 0.14817,0.14817 v 0.74877 h 2.21986 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.14816,-0.14817 h 3.55336 a 0.14792589,0.14792589 0 0 1 0.14818,0.14817 v 0.74877 h 2.21985 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.14817,-0.14817 h 3.55335 a 0.14792325,0.14792325 0 0 1 0.14817,0.14817 v 0.74877 h 2.2225 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.14816,-0.14817 h 3.55336 a 0.14737291,0.14737291 0 0 1 0.14552,0.14817 v 0.74877 h 2.2225 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.14817,-0.14817 h 3.55335 a 0.14792325,0.14792325 0 0 1 0.14817,0.14817 v 0.74877 h 2.21985 v -0.74877 a 0.14792325,0.14792325 0 0 1 0.14817,-0.14817 h 3.55335 a 0.14792325,0.14792325 0 0 1 0.14817,0.14817 v 0.74877 h 10.36373 a 3.5524069,3.5524069 0 0 1 3.55334,3.55335 z" fill="#3f3d56" id="path30" style="stroke-width: 0.264583;"></path>
+                                        <path id="rect32" d="M 1.1549346,179.42541 H 195.09439 v 0.52917 H 1.1549346 Z" style="fill: rgb(63, 61, 86); stroke-width: 0.264583;"></path>
+                                        <path d="m 151.22508,108.89558 h -44.03802 v -0.90767 H 87.218519 v 0.90767 H 42.998972 a 2.9788405,2.9788405 0 0 0 -2.978841,2.97884 V 172.176 a 2.9788485,2.9788485 0 0 0 2.978841,2.97885 H 151.22508 a 2.9788485,2.9788485 0 0 0 2.97884,-2.97885 v -60.30158 a 2.9788379,2.9788379 0 0 0 -2.97884,-2.97884 z" fill="#3f3d56" id="path34" style="stroke-width: 0.264583;"></path>
+                                        <path id="circle36" d="m 103.81327,129.94833 a 6.614583,6.614583 0 0 1 -6.614586,6.61459 6.614583,6.614583 0 0 1 -6.614583,-6.61459 6.614583,6.614583 0 0 1 6.614583,-6.61458 6.614583,6.614583 0 0 1 6.614586,6.61458 z" style="fill: none; stroke: rgb(208, 205, 225); stroke-width: 0.529167; stroke-miterlimit: 10;"></path>
+                                        <path id="circle38" d="m 101.69659,132.32957 a 6.614583,6.614583 0 0 1 -6.614576,6.61459 6.614583,6.614583 0 0 1 -6.614589,-6.61459 6.614583,6.614583 0 0 1 6.614589,-6.61458 6.614583,6.614583 0 0 1 6.614576,6.61458 z" style="fill: rgb(208, 205, 225); stroke-width: 0.264583;"></path>
+                                        <path id="rect40" d="m 6.4322658,176.75221 h 7.4083332 v 7.40833 H 6.4322658 Z" style="fill: rgb(208, 205, 225); stroke-width: 0.264583;"></path>
+                                        <path d="m 9.3437288,170.93148 v 8.99583 h 8.9958332 v -8.99583 z m 8.6042502,8.60425 H 9.7326658 v -8.21267 h 8.2153132 z" fill="#3f3d56" id="path42" style="stroke-width: 0.264583;"></path>
+                                        <path id="rect44" d="m 177.88225,176.75221 h 7.40834 v 7.40833 h -7.40834 z" style="fill: rgb(208, 205, 225); stroke-width: 0.264583;"></path>
+                                        <path d="m 24.992153,160.48865 c 0.246877,8.45344 -4.69242,11.55143 -10.891097,11.73245 q -0.215977,0.006 -0.430011,0.008 -0.431189,0.003 -0.854006,-0.0144 C 7.2109568,171.98197 2.7734158,169.00614 2.5438208,161.14447 2.3062248,153.00862 12.404558,142.43766 13.162211,141.65572 l 0.0013,-7.9e-4 c 0.02878,-0.0298 0.04352,-0.0447 0.04352,-0.0447 0,0 11.538214,10.42587 11.785071,18.87861 z" fill="#d0cde1" id="path46" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 13.654776,170.93997 3.937613,-5.85562 -3.92956,6.48558 0.0082,0.6589 q -0.431189,0.003 -0.854007,-0.0144 l 0.195305,-8.46979 -0.0053,-0.0654 0.0072,-0.0126 0.01871,-0.80034 -4.3121522,-6.26075 4.3070642,5.66174 0.01529,0.16917 0.147511,-6.39926 -3.7245402,-6.49096 3.7351442,5.36679 -0.03899,-13.25761 8.5e-5,-0.0441 0.0013,0.0434 0.247243,10.44879 3.394472,-4.24431 -3.383359,5.14444 0.07408,5.724 3.123612,-5.5864 -3.112132,6.42793 0.04124,3.18282 4.542575,-7.78178 -4.528764,8.89213 z" fill="#3f3d56" id="path48" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 196.44215,160.48865 c 0.24689,8.45344 -4.69242,11.55143 -10.8911,11.73245 q -0.21597,0.006 -0.43001,0.008 -0.43119,0.003 -0.854,-0.0144 c -5.60609,-0.23273 -10.04363,-3.20856 -10.27322,-11.07023 -0.2376,-8.13585 9.86074,-18.70681 10.61839,-19.48875 l 0.001,-7.9e-4 c 0.0288,-0.0298 0.0435,-0.0447 0.0435,-0.0447 0,0 11.53821,10.42587 11.78507,18.87861 z" fill="#d0cde1" id="path50" style="stroke-width: 0.264583;"></path>
+                                        <path d="m 185.10477,170.93997 3.93762,-5.85562 -3.92956,6.48558 0.008,0.6589 q -0.43119,0.003 -0.85401,-0.0144 l 0.19531,-8.46979 -0.005,-0.0654 0.007,-0.0126 0.0187,-0.80034 -4.31216,-6.26075 4.30707,5.66174 0.0153,0.16917 0.14751,-6.39926 -3.72454,-6.49096 3.73515,5.36679 -0.039,-13.25761 8e-5,-0.0441 10e-4,0.0434 0.24724,10.44879 3.39447,-4.24431 -3.38336,5.14444 0.0741,5.724 3.12362,-5.5864 -3.11214,6.42793 0.0412,3.18282 4.54257,-7.78178 -4.52876,8.89213 z" fill="#3f3d56" id="path52" style="stroke-width: 0.264583;"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="py-8 bg-navy-100 border-t border-b border-navy-200 my-16">
+                    <div class="container mx-auto">
+                        <div class="flex flex-col lg:flex-row justify-center content-center items-center text-center lg:text-left">
+                            <div class="px-4 flex flex-col content-center my-2 md:my-4 mx-4 md:my-0">
+                                <h4 class="text-lg font-semibold pb-0 mb-0 mb-md-0">
+                                    Start Earning: Create a Private shop  today
+                                </h4>
+                                <p class="mb-0 text-gray-700">
+                                    Build your dream shops with Eirmon
+                                </p>
+                            </div>
+                            <a class="px-4 btn btn-secundary bg-red-500 rounded text-white font-semibold border border-red-700 shadow py-2 hover:bg-red-600" href="/signup">
+                                Own a  Shop
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-8 text-center md:text-left" style="background-color: #4eb72b;">
+        <div class="container mx-auto">
+            <div class=" flex flex-col lg:flex-row content-center items-center justify-between">
+                <div class="flex items-center flex-col lg:flex-row mx-auto">
+                    <!-- <img src="/static/media/logo.d49a633e.svg" class="w-8 lazy" alt="Logo" data-ll-status="observed"> -->
+                    <span id='footer_right'  class="ml-0 md:ml-4 text-sm text-gray-600 py-4 lg:py-0 transition duration-500 ease-in-out">
+                        Eirmon, Copyright © 2021
+                    </span>
+                </div>
+                <div class="navbar mx-auto">
+                    <ul class="navbar-nav flex flex-">
+                        <li class="active px-md-3 px-2">
+                            <a  id='footer_left' class=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="/contact">
+                                Contact
+                            </a>
+                        </li>
+                        <li class=" px-md-3 px-2">
+                            <a  id='footer_left' class=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="/faq">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class=" px-md-3 px-2">
+                            <a  id='footer_left' class=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="/pricing">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class=" px-md-2 px-2 hidden lg:block">
+                            <a  id='footer_left' class=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="/terms-and-conditions">
+                                T's &amp; C's
+                            </a>
+                        </li>
+                        <li class=" px-md-2 px-2 hidden lg:block">
+                            <a  id='footer_left' class=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="/privacy-policy">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onload = () => {
+            // Get the button, and when the user clicks on it, execute myFunction
+            document.getElementById("dropdown").onclick = function() {learninFunction()};
+            
+
+            /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+            function learninFunction() {
+                document.getElementById("dropdown-content").classList.toggle("show");
+                }
+        }
+
+        document.getElementById("mobiledropdown").onclick = function() {mobiledropdown()};
+ 
+        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        function mobiledropdown() {
+                document.getElementById("mobiledropdown-content").classList.toggle("mobileshow");
+                }
+    </script> 
+    <script>
+    </script>
+</body>
+</html>

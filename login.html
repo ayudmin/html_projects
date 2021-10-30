@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&amp;display=swap" rel="stylesheet">
+    <style>body{font-family: Cabin,Sans-serif}</style>
+</head>
+<body>
+    <div id="root">
+        <div class="relative bg-white shadow">
+            <div class="topnav max-w-7x1 mx-auto px-4 sm:px-6">
+                <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    <div class="Ig:w-0 Ig:flex-1">
+                        <div class="flex flex-row items-center">
+                            <a href="#">
+                                <a  class="p1-5 text-3x1 text-gray-500 hoover:text-gray-600 transition duration-300 ease-in-out active" aria-current="page"  href="#">Eirmon</a>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button" id="mobiledropdown" onclick="mobiledropdown()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">Dashboard</a>
+                        <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">Pricing</a>
+                        <div  class="relative">
+                            <button type="button" id="dropdown" onclick="learninFunction()" class="group inline-flex  dropbtn items-center space-x-2 text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                                <span>Shops</span>
+                                <svg class="text-gray-700 h-5 w-5 group-hover:text-gray-900 group-focus:text-gray-900 transition ease-in-out duration-150" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd">
+
+                                    </path>
+                                </svg>
+                            </button>
+                            <div  style="transition: transform 200ms ease 0s, opacity 200ms ease 0s; opacity: 1;">
+                                <div id="dropdown-content" class="z-20 absolute -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                    <div class="rounded-lg shadow-lg">
+                                        <div class="rounded-lg shadow-xs overflow-hidden">
+                                            <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                                                <div class="cursor-pointer -m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path>
+                                                    </svg>
+                                                    <div class="space-y-1">
+                                                        <p class="text-base leading-6 font-medium text-gray-900">
+                                                            Basic Django Roadmap
+                                                        </p>
+                                                        <p class="text-sm leading-5 text-gray-500">
+                                                            Elevate your Django skills
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="cursor-pointer -m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
+                                                    </svg>
+                                                    <div class="space-y-1">
+                                                        <p class="text-base leading-6 font-medium text-gray-900">
+                                                            Advanced Django Roadmap
+                                                        </p>
+                                                        <p class="text-sm leading-5 text-gray-500">
+                                                            Become a professional Django developer
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+                        <ul class="flex flex-">
+                            <li>
+                                <a class="px-4 py-2 text-gray-700 hover:text-gray-900 transition duration-500 ease-in-out hover:rounded hover:bg-gray-200 rounded text-gray-900" href="/login">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 signup">
+                                <a class="text-white px-3 py-2 bg-red-500 hover:bg-red-600 rounded border border-red-600 shadow font-semibold transition duration-500 ease-in-out" href="/signup">
+                                    Join Today
+                                </a>
+                            </li>
+                            <li>
+                                <button type="button" style="float: left;" class="topnavbutton -mr-2 -my-2 md:hidden">
+                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                        <path stroke-lincap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+        
+                                        </path>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+                <div  id="mobiledropdown-content" style="transition: transform 200ms ease 0s, opacity 200ms ease 0s; opacity: 1;">
+                    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50">
+                        <div class="rounded-lg shadow-lg">
+                            <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+                                <div class="pt-5 pb-6 px-5 space-y-6">
+                                    <div class="flex items-center justify-between">
+                                        <a aria-current="page" class="active" href="/">
+                                            <p class="h-8 w-auto" src="/static/media/logo.b070938f.svg" alt="Eirmon">Eirmon</p></a>
+                                            <div class="-mr-2">
+                                                <button type="button" id="mobiledropdown" onclick="mobiledropdown()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <nav class="grid row-gap-8">
+                                                <div class="cursor-pointer -m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path>
+                                                    </svg>
+                                                    <div class="text-base leading-6 font-medium text-gray-900">
+                                                        Basic Django Roadmap
+                                                    </div>
+                                                </div>
+                                                <div class="cursor-pointer -m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-100 transition ease-in-out duration-150">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="flex-shrink-0 h-6 w-6 text-red-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
+                                                    </svg>
+                                                    <div class="text-base leading-6 font-medium text-gray-900">
+                                                        Advanced Django Roadmap
+                                                    </div>
+                                                </div>
+                                                <a class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" href="/pricing">
+                                                    Pricing
+                                                </a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="py-6 px-5 space-y-6">
+                                        <div class="space-y-6">
+                                            <span class="w-full flex rounded-md shadow-sm">
+                                                <div class="cursor-pointer w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-600 hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 transition ease-in-out duration-150">
+                                                    Sign up
+                                                </div>
+                                            </span>
+                                            <p class="text-center text-base leading-6 font-medium text-gray-500">
+                                                Have an account? 
+                                                <span class="cursor-pointer text-red-600 hover:text-red-500 transition ease-in-out duration-150">
+                                                    Sign in
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div style="position: fixed; z-index: 9999;"></div>
+        <div class="bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8" >
+        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+            <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">Login</h2>
+            <p class="mt-2 text-center text-sm leading-5 text-gray-600 max-w">
+                Or <a class="font-medium text-red-600 hover:text-red-500 focus:outline-none focus:underline transition ease-in-out duration-150" href="/signup">
+                    create an account
+                </a>
+            </p>
+        </div>
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+            <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                <div class="mt-6">
+                    <div class="mt-6 grid grid-cols-1 gap-3">
+                        <form action="">
+                            <div class="mb-5 sm:col-span-6">
+                                <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email address</label>
+                                <div class="mt-1 rounded-md shadow-sm">
+                                    <input name="email" type="email" id="email" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm " value="">
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 sm:col-span-6">
+                                    <label for="password" class="block text-sm font-medium leading-5 text-gray-700">Password</label>
+                                    <div class="mt-1 rounded-md shadow-sm">
+                                        <input name="password" type="password" id="password" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm " value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center justify-between">
+                                <div class="text-sm leading-5">
+                                    <a class="font-medium text-red-600 hover:text-red-500 focus:outline-none focus:underline transition ease-in-out duration-150" href="/forgot-password">Forgot your password?</a>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <span class="block w-full rounded-md shadow-sm">
+                                    <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 transition duration-150 ease-in-out">Sign in</button>
+                                </span>
+                            </div>  
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
