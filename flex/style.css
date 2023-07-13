@@ -10,5 +10,10 @@ body {
 }
 
 .flex-image {
-    width: 100%;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    height: inherit;
+    
+    
 }
