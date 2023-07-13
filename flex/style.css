@@ -3,8 +3,12 @@ html, body {
 }
 
 body {
-    background-color: #00b1b3;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-image {
+    width: 100%;
 }
